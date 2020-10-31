@@ -1,24 +1,99 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column              | Type    | Options     |
+| --------------------| ------  | ----------  |
+| email               | string  | null: false |
+| password            | string  | null: false |
+| nickname            | string  | null: false |
+| self_introduction   | text    | null: false |
+| country_id          | integer | null: false |
+| gender_id           | integer |             |
+| age_id              | integer |             |
 
-* Ruby version
+### Association
+has_many :sends
+has_many :comments
+has_many :room_users
+has_many :rooms, through: room_users
+has_many :messages
+has_one_attached :image
 
-* System dependencies
+## sends テーブル
 
-* Configuration
+| Column     | Type       | Options                        |
+| ---------- | ---------- | -----------------------------  |
+| content    | text       | null: false                    |
+| user       | references | null: false, foreign_key: true |
 
-* Database creation
+### Association
+belongs_to :user
+has_many :comments
+has_many :send_tag_relations
+has_many :tags, through :send_tag_relations
 
-* Database initialization
+## comments テーブル
+| Column     | Type       | Options                        |
+| ---------- | ---------- | -----------------------------  |
+| text       | text       | null: false                    |
+| user       | references | null: false, foreign_key: true |
+| send       | references | null: false, foreign_key: true |
 
-* How to run the test suite
+### Association
+belongs_to :user
+belongs_to :send
+has_many_attached :images
 
-* Services (job queues, cache servers, search engines, etc.)
+## send_tag_relations テーブル
 
-* Deployment instructions
+| Column     | Type       | Options                        |
+| ---------- | ---------- | -----------------------------  |
+| send       | references | null: false, foreign_key: true |
+| tag        | references | null: false, foreign_key: true |
 
-* ...
+### Association
+belongs_to :send
+belongs_to :tag
+
+## tags テーブル
+| Column     | Type       | Options                        |
+| ---------- | ---------- | -----------------------------  |
+| send       | references | null: false, foreign_key: true |
+| tag        | references | null: false, foreign_key: true |
+
+### Association
+has_many :send_tag_relations
+has_many :tags, through :send_tag_relations
+
+## room_users テーブル
+| Column   | Type       | Options                        |
+| ---------| ---------- | -----------------------------  |
+| user     | references | null: false, foreign_key: true |
+| room     | references | null: false, foreign_key: true |
+
+### Association
+belongs_to :user
+belongs_to :room
+
+## rooms テーブル　
+| Column     | Type       | Options                        |
+| ---------- | ---------- | -----------------------------  |
+| user       | references | null: false, foreign_key: true |
+
+### Association
+has_many :room_users
+has_many :users, through :room_users
+has_many :messages
+
+## messages テーブル
+| Column     | Type       | Options                        |
+| ---------- | ---------- | -----------------------------  |
+| content    | text       | null: false                    |
+| user       | references | null: false, foreign_key: true |
+| room       | references | null: false, foreign_key: true |
+ 
+ ### Association
+ belongs_to :user
+ belongs_to :room
+ has_many_attached :images
