@@ -10,7 +10,7 @@
 | self_introduction   | text    | null: false |
 | country_id          | integer | null: false |
 | gender_id           | integer |             |
-| age_id              | integer |             |
+| age                 | integer |             |
 
 ### Association
 has_many :sends
