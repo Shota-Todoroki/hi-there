@@ -1,0 +1,38 @@
+.title-name {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 88px;
+  text-align: center;
+  background-color: rgb(238, 185, 117);
+  color:white;
+  width: 50%;
+}
+
+.cautionary-points{
+  display: flex;
+  justify-content: center;
+}
+
+.options{
+  text-align: center;
+}
+ .lists-top{
+  margin-bottom: 30px;
+ }
+
+.sign-up{
+  font-size: 27px;
+  text-decoration: none;
+  color: black;
+  border-bottom-style: dashed;
+}
+
+.login{
+  font-size: 27px;
+  text-decoration: none;
+  color: black;
+  border-bottom-style: dashed;
+}
