@@ -1,11 +1,19 @@
-<h1>Hi-there</h1>
-<div class= 'choice'>
-  <div class = sign-up-page>
-    <%= link_to 'Sign-up', new_user_registration_path %>
+<div class = "top-page">
+  <div class = "title-name">
+    <h1>Hi-there!</h1>
   </div>
-  <div class = log-in-page>
-    <%= link_to 'Log-in', new_user_session_path %>
+  <div class = "cautionary-points">
+    <h5>*Please Sign-up or Login </h5>
   </div>
-</div> 
+  <div class= 'options'>
+    <div class = "lists-top">
+      <%= link_to '>Sign-up', new_user_registration_path, class: "sign-up" %>
+    </div>
+    <div class = "lists-bottom">
+      <%= link_to '>Log-in', new_user_session_path, class: "login" %>
+    </div>
+  </div>
+
+</div>
 
 
