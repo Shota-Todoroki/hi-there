@@ -119,23 +119,21 @@
 }
 
 h1 {
-  font-size: 82px;
+  font-size: 64px;
   text-align: center;
   background-color: rgb(238, 185, 117);
   color:white;
   width: 42vw;
 }
 
-.sign-up{
+.sign-up {
   font-size: 17px;
   text-decoration: none;
   color: black;
-  ;
 }
 
-.forgot-password{
+.forgot-password {
   font-size: 17px;
   text-decoration: none;
   color: black;
-  ;
 }
