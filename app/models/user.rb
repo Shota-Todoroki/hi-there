@@ -9,7 +9,6 @@ class User < ApplicationRecord
 
   with_options presence: true do
     validates :nickname
-    validates :self_introduction
     validates :country_id
   end
   belongs_to_active_hash :country
