@@ -28,6 +28,7 @@ has_one_attached :image
 | user       | references | null: false, foreign_key: true |
 
 ### Association
+has_one_attached :image
 belongs_to :user
 has_many :comments
 has_many :send_tag_relations

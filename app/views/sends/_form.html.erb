@@ -1,0 +1,7 @@
+<div class="post-form">  
+  <%= form_with model: @send, local: true do |f| %>
+      <%= f.file_field :image, placeholder: "Image Url", class: "image-form" %>
+      <%= f.text_area :content, placeholder: "text", rows: "10", class: "text-form" %>
+      <%= f.submit "SEND", class: "send-form" %>
+  <% end %>
+</div>
