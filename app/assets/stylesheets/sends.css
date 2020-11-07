@@ -10,7 +10,7 @@
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
-  background-color: #354c6b;
+  background-color: #4e8deb;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,17 +25,8 @@
 .chat {
   background-color: #ffffff;
   width: calc(100% - 300px);
+  margin: 0 auto;
 }
-
-.chat-header {
-  height: 100px;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
 
 
 /* 以下オリジナル */
@@ -44,13 +35,13 @@
   display: flex;
   justify-content: center; 
 }
-
 h1 {
   font-size: 47px;
   text-align: center;
   background-color: rgb(238, 185, 117);
   color:white;
   width: 100vw;
+  margin: 15px auto;
 }
 h3 {
   font-size: 32px;
@@ -69,7 +60,11 @@ h4 {
   color:  rgb(238, 185, 117);
   margin: 0 auto;
 }
-.item-name{
+h5 {
+  text-decoration: none;
+}
+
+.name{
   text-align: center;
   border-bottom: 3px rgba(236, 146, 72, 0.295) solid;
   margin: 20px;
@@ -90,7 +85,7 @@ h4 {
 
 .image-form{
   display: block;
-  margin: 15px auto;
+  margin: 15px auto ;
 }
 .text-form{
   display: block;
@@ -111,10 +106,6 @@ h4 {
   overflow: scroll;
   margin: 50px;
 }
-p.break-all{
-  border: 3px gray double ;
-  margin: 50px;
-}
 
 .send-info{
   width: 680px;
@@ -122,7 +113,74 @@ p.break-all{
   border: 2.1px goldenrod;
   border-style: outset;
 }
+img{
+  max-width:60vw;
+  height:60vh;
+}
+.card-wrapper{
+  width: 100vw;
+}
+/* 詳細ページ */
 .image{
   display: flex;
   justify-content: center;
+}
+.item-img{
+  margin-top: 15px;
+}
+.more{
+  margin-top: 30px;
+}
+.more_lists{
+  display: flex;
+  justify-content: center;
+}
+.edit-page{
+  margin-right: 30px;
+}
+.edit{
+  border-bottom:5px blanchedalmond double ;
+}
+.destroy{
+  border-bottom:5px blanchedalmond double ;
+}
+.destroy-page{
+  margin-left: 30px;
+}
+
+.break-all{
+  border: 3px gray double ;
+  margin: 30px auto;
+  width:50%
+}
+.edit{
+  text-decoration: none;
+}
+.destroy{
+  text-decoration: none;
+}
+.base-row{
+  padding-top: 30px;
+}
+.base{
+  width: 680px;
+  margin: 0 auto ;
+  border: 2.1px goldenrod;
+  border-style: outset;
+}
+.image-list{
+  margin: 50px;
+}
+
+/*編集ページ */
+.second-title{
+  display: flex;
+  justify-content: center;
+}
+h5 {
+  color:  rgb(238, 185, 117);
+  font-size: 32px;
+  text-align: center;
+  width: 35vw;
+  margin: 30px;
 }

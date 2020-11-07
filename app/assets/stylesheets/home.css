@@ -3,13 +3,6 @@
   justify-content: center;
 }
 
-h1 {
-  font-size: 88px;
-  text-align: center;
-  background-color: rgb(238, 185, 117);
-  color:white;
-  width: 50%;
-}
 
 .cautionary-points{
   display: flex;
