@@ -1,0 +1,186 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.side-bar {
+  background-color: rgb(243, 194, 119);
+  width: 300px;
+  height: 100vh;
+}
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: #4e8deb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.chat {
+  background-color: #ffffff;
+  width: calc(100% - 300px);
+  margin: 0 auto;
+}
+
+
+/* 以下オリジナル */
+
+.title-name{
+  display: flex;
+  justify-content: center; 
+}
+h1 {
+  font-size: 47px;
+  text-align: center;
+  background-color: rgb(238, 185, 117);
+  color:white;
+  width: 100vw;
+  margin: 15px auto;
+}
+h3 {
+  font-size: 32px;
+  text-align: center;
+  width: 100vw;
+  background-color: rgb(238, 185, 117);
+  color:  white;
+  margin: 15px auto;
+}
+
+h4 {
+  font-size: 32px;
+  text-align: center;
+  width: 35vw;
+  background-color: white;
+  color:  rgb(238, 185, 117);
+  margin: 0 auto;
+}
+h5 {
+  text-decoration: none;
+}
+
+.name{
+  text-align: center;
+  border-bottom: 3px rgba(236, 146, 72, 0.295) solid;
+  margin: 20px;
+}
+
+.lists{
+  display: flex;
+  justify-content: center;
+}
+
+.list{
+  list-style: none;
+}
+
+.option{
+  text-decoration: none;
+}
+
+.image-form{
+  display: block;
+  margin: 15px auto ;
+}
+.text-form{
+  display: block;
+  height: 235px;
+  width: 525px;
+}
+.send-form{
+  display: block;
+  margin: 27px auto;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.send-lists{
+  overflow: scroll;
+  margin: 50px;
+}
+
+.send-info{
+  width: 680px;
+  margin: 20px  ;
+  border: 2.1px goldenrod;
+  border-style: outset;
+}
+img{
+  max-width:60vw;
+  height:60vh;
+}
+.card-wrapper{
+  width: 100vw;
+}
+/* 詳細ページ */
+.image{
+  display: flex;
+  justify-content: center;
+}
+.item-img{
+  margin-top: 15px;
+}
+.more{
+  margin-top: 30px;
+}
+.more_lists{
+  display: flex;
+  justify-content: center;
+}
+.edit-page{
+  margin-right: 30px;
+}
+.edit{
+  border-bottom:5px blanchedalmond double ;
+}
+.destroy{
+  border-bottom:5px blanchedalmond double ;
+}
+.destroy-page{
+  margin-left: 30px;
+}
+
+.break-all{
+  border: 3px gray double ;
+  margin: 30px auto;
+  width:50%
+}
+.edit{
+  text-decoration: none;
+}
+.destroy{
+  text-decoration: none;
+}
+.base-row{
+  padding-top: 30px;
+}
+.base{
+  width: 680px;
+  margin: 0 auto ;
+  border: 2.1px goldenrod;
+  border-style: outset;
+}
+.image-list{
+  margin: 50px;
+}
+
+/*編集ページ */
+.second-title{
+  display: flex;
+  justify-content: center;
+}
+h5 {
+  color:  rgb(238, 185, 117);
+  font-size: 32px;
+  text-align: center;
+  width: 35vw;
+  margin: 30px;
+}

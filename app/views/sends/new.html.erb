@@ -1,0 +1,13 @@
+<div class="title-name">
+  <h1>Hi-there</h1>
+</div>
+
+<div class="contents"> 
+  <%= render "shared/error_messages",model: @send %> 
+  <div class="contents row">
+    <h4>post page</h4>
+    <div class="container">
+      <%= render partial: "form",locals: {send: @send},class: "form"%>
+    </div>
+  </div>
+</div>

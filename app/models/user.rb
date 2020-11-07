@@ -9,10 +9,6 @@ class User < ApplicationRecord
 
   with_options presence: true do
     validates :nickname
-<<<<<<< Updated upstream
-=======
-    #validates :self_introduction
->>>>>>> Stashed changes
     validates :country_id
   end
   belongs_to_active_hash :country

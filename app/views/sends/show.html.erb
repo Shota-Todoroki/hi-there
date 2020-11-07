@@ -1,0 +1,30 @@
+<div class="title-name">
+  <h1 >Hi-there</h1>
+</div>
+<div class="base-row">
+  <div class="base">
+    <div class="contents row">
+      <%if user_signed_in? && current_user.id == @send.user.id %> 
+        <div class="more">
+          <div class="more_lists">
+            <div class="edit-page">
+              <%= link_to 'edit', edit_send_path(@send.id), class: "edit" %>
+            </div>
+            <div class="destroy-page">
+              <%= link_to 'delete', send_path(@send.id), class: "destroy", method: :delete %>
+            </div>
+          </div>
+        </div>
+      <%end%>
+    </div> 
+    <div class="image">
+      <%= image_tag @send.image.variant(resize: '380x380'), class: "item-img" if @send.image.attached? %>
+    </div>
+    <div class=contents>
+      <p class="break-all">
+        <%= @send.content %>
+      </p>
+    </div>
+  </div>
+</div>
+
