@@ -1,9 +1,9 @@
 .account-page .account-page__inner {
   width: 980px;
-  margin: 60px auto;
-  padding: 60px;
+  margin: 5px auto;
+  padding: 48px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   border-radius: 5px;
 }
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
@@ -111,4 +111,29 @@
   margin: 0;
   padding: 0;
   font-size: 13px;
+}
+
+.title-name {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 64px;
+  text-align: center;
+  background-color: rgb(238, 185, 117);
+  color:white;
+  width: 42vw;
+}
+
+.sign-up {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+}
+
+.forgot-password {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
 }
