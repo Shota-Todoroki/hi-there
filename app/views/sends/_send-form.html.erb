@@ -1,13 +1,13 @@
- <div class="wrapper"> 
+<div class="chat-form">  
   <div class="card-wrapper">
     <% @sends.each do |send| %>
       <div class="send-info">
         <div class="send-lists">
-          <%= link_to sends_path(send.id) do%>
+          <%= link_to send_path(send.id) do%>
             <div class="name">
-              <h5 class='item-name'>
-                <%= send.user.nickname %>
-              </h5>
+              <p class="nick-name">
+                <%= send.user.nickname%>
+              </p>
             </div>
             <div class="image">
               <%= image_tag send.image.variant(resize: '380x380'), class: "item-img" if send.image.attached? %>
@@ -23,3 +23,4 @@
     <%end%>
   </div>
 </div>
+
