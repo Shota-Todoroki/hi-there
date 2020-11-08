@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  /* width: 100%; */
 }
 .side-bar {
   background-color: rgb(243, 194, 119);
@@ -67,7 +68,7 @@ h5 {
 .name{
   text-align: center;
   border-bottom: 3px rgba(236, 146, 72, 0.295) solid;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .lists{
@@ -108,7 +109,7 @@ h5 {
 }
 
 .send-info{
-  width: 680px;
+  width: 600px;
   margin: 20px  ;
   border: 2.1px goldenrod;
   border-style: outset;
@@ -118,7 +119,7 @@ img{
   height:60vh;
 }
 .card-wrapper{
-  width: 100vw;
+  width: 100vw; 
 }
 /* 詳細ページ */
 .image{

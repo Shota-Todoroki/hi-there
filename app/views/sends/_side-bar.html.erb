@@ -1,12 +1,12 @@
 <div class="side-bar-header">
   <div class="header-name">
     <%= link_to current_user.nickname%>
-    <%= link_to "detail",user_path(current_user.id) %>
   </div>
 </div>
 <div class="options">
   <ul class="lists">
     <li class="list"><%= link_to "send", new_send_path, class: "option"%></li>
+    <li class="list"><%= link_to "detail",user_path(current_user.id),class: "detail" %></li>
   </ul>
 </div>
 

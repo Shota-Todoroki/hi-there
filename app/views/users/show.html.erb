@@ -1,30 +1,35 @@
 <div class='account-page' id='account-page'>
   <div class='account-page__inner clearfix'>
     <div class='account-page__inner--left account-page__header'>
-      <h2>Personality</h2>
+      <h2>My-account</h2>
     </div>
-    <div class='field-label'>
-      <%= %>
-    </div>
+    <%= link_to "Edit", edit_user_path(current_user.id),class: "my-account" %>
     <div class='account-page__inner--right user-form'>
-        <div class='field'>
-          <div class='field-input'>
-            <%= f.email_field :email, autofocus: true%>
-          </div>
-          <div class='field'>
-            <div class='field-label'>
-              <%= f.label :password%>
-              <i>/Password must contain alpha-numeral(8 or more characters)/</i>
-            </div>
-            <div class='field-input'>
-              <%= f.password_field :password, autocomplete: "off"%>
-            </div>
-          </div>
-          <div class='actions'>
-            <%= f.submit "Log in", class: 'btn'%>
-          </div>
-        </div>
-      <% end %>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th class="table__col1">nickname</th>
+            <td class="table__col2"><%= @user.nickname %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">self-introduction</th>
+            <td class="table__col2"><%= @user.self_introduction %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">country</th>
+            <td class="table__col2"><%= @user.country.name%></td>
+          </tr>
+          <tr>
+            <th class="table__col1">gender</th>
+            <td class="table__col2"><%= @user.gender.name %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">age</th>
+            <td class="table__col2"><%= @user.age %></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
+
