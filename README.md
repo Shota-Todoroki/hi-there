@@ -44,7 +44,7 @@ has_many :tags, through: :send_tag_relations
 ### Association
 belongs_to :user
 belongs_to :send
-has_many_attached :images
+has_one_attached :image
 
 ## send_tag_relations テーブル
 
