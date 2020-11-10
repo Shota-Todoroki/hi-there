@@ -1,30 +1,45 @@
 <div class='account-page' id='account-page'>
-  <div class='account-page__inner clearfix'>
+  <div class='account-page-profile-top'>
     <div class='account-page__inner--left account-page__header'>
-      <h2>Personality</h2>
-    </div>
-    <div class='field-label'>
-      <%= %>
-    </div>
-    <div class='account-page__inner--right user-form'>
-        <div class='field'>
-          <div class='field-input'>
-            <%= f.email_field :email, autofocus: true%>
-          </div>
-          <div class='field'>
-            <div class='field-label'>
-              <%= f.label :password%>
-              <i>/Password must contain alpha-numeral(8 or more characters)/</i>
-            </div>
-            <div class='field-input'>
-              <%= f.password_field :password, autocomplete: "off"%>
-            </div>
-          </div>
-          <div class='actions'>
-            <%= f.submit "Log in", class: 'btn'%>
-          </div>
+      <h2><%=link_to "My-account", root_path,class:"my-account"%></h2>
+      <div class="select-option">
+        <div class="edit-btn">
+          <%= link_to ">>Edit", edit_user_path(current_user.id),class: "my-account" %>
         </div>
-      <% end %>
+      </div>
+    </div>
+
+    <div class='account-page-profile user-form'>
+      <div class="image">
+        <% if @user.image.attached? %>
+          <%= image_tag @user.image %>
+        <% end %>
+      </div>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th class="detail-user">nickname</th>
+            <td class="detail-value"><%= @user.nickname %></td>
+          </tr>
+          <tr>
+            <th class="detail-user">self-introduction</th>
+            <td class="detail-value"><%= @user.self_introduction %></td>
+          </tr>
+          <tr>
+            <th class="detail-user">country</th>
+            <td class="detail-value"><%= @user.country.name%></td>
+          </tr>
+          <tr>
+            <th class="detail-user">gender</th>
+            <td class="detail-value"><%= @user.gender.name %></td>
+          </tr>
+          <tr>
+            <th class="detail-user">age</th>
+            <td class="detail-value"><%= @user.age %></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
+

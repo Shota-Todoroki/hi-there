@@ -1,17 +1,32 @@
 <div class='account-page' id='account-page'>
-  <div class='account-page__inner clearfix'>
-    <div class='account-page__inner--left account-page__header'>
-      <h2>Create Account</h2>
+  <div class="account-form">
+    <div class='account-page__inner clearfix'>
+      <div class='account-page__inner--left account-page__header'>
+        <h2>Edit My Account</h2>
+      </div>
     </div>
+
     <div class='account-page__inner--right user-form'>
-      <%= form_with(model: @user, url: user_registration_path, class: 'registration-main', local: true) do |f|%>
-        <%= render 'shared/error_messages', model: @user %>
+      <%= form_with(model: @user, url: user_path, class: 'registration-main', local: true) do |f|%>
+      <%= render 'shared/error_messages', model: @user %>
+        <div class="post-image">
+          <div id="image-list"></div>
+          <%= f.file_field :image, placeholder: "Image Url", id: "image-form" %>
+        </div>
         <div class='field'>
           <div class='field-label'>
             <%= f.label :nickname%>
           </div>
           <div class='field-input'>
             <%= f.text_field :nickname, autofocus: true%>
+          </div>
+        </div>
+        <div class='field'>
+          <div class='field-label'>
+            <%= f.label :self_introduction%>
+          </div>
+          <div class='field-input'>
+            <%= f.text_area :self_introduction, autofocus: true%>
           </div>
         </div>
         <div class='field'>
