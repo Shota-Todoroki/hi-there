@@ -1,19 +1,9 @@
-.account-page .account-page__inner {
-  width: 980px;
-  margin: 5px auto;
-  padding: 48px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  border-radius: 5px;
-}
-.account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
-  float: left;
+.account-page__inner {
   width: 50%;
-}
-.account-page .account-page__inner:after {
-  clear: both;
-  content: "";
-  display: block;
+  margin: 40px auto;
+  background-color: #fff;
+  display: flex;
+  /* border-radius: 5px; */
 }
 .account-page .account-page__header h2 {
   margin-bottom: 10px;
@@ -67,7 +57,7 @@
   border-radius: 2px;
 }
 .account-page input[type=submit] {
-  float: left;
+  float: right;
   margin-top: 20px;
   color: #fff;
   background-color:  rgb(240, 127, 61);
@@ -136,4 +126,50 @@ h1 {
   font-size: 17px;
   text-decoration: none;
   color: black;
+}
+.my-account {
+  text-decoration: none;
+  color:black;
+}
+.table {
+  margin-top: 48px ;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.detail-user {
+  width: 20%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 8px;
+  text-align: center;
+}
+.detail-value {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+}
+textarea {
+  width: 100%;
+}
+.select-option {
+  padding-right: 39px;
+  padding-top: 28px;
+}
+.post-image{
+  width: 50%;
+}
+
+.registration-main {
+  width: 50%;
+  margin:0 auto;
+}
+.edit-btn{
+  margin: 0 auto;
+  text-align: center;
+}
+.account-page-profile-top{
+  width: 50%;
+  margin: 40px auto;
+  background-color: #fff;
 }

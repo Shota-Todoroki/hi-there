@@ -9,14 +9,14 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      redirect_to
+      redirect_to root_path
     else
       render :edit
     end
   end
   private
   def user_params
-    params.require(:user).permit(:nickname, :self_introduction, :country_id, :gender_id, :age, :email, :password)
+    params.require(:user).permit(:image, :nickname, :self_introduction, :country_id, :gender_id, :age, :email, :password)
   end
   def set_user
     @user = User.find(params[:id])
