@@ -11,6 +11,7 @@
   width: 300px;
   height: 100vh;
   margin-left: 8px;
+  margin-top: 14px;
   border-radius: 12px;
 }
 .side-bar-header {
@@ -30,13 +31,13 @@
 }
 
 .chat {
-  background-color: #ffffff;
   margin: 0 auto;
 }
 .chat-form{
   height: 100vh;
-  overflow:scroll;
+  overflow: scroll;
   background-color:cornsilk ;
+  margin-top: 31px;
 }
 
 h1 {
