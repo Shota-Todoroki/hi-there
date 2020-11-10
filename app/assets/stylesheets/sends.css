@@ -10,7 +10,8 @@
   background-color: rgb(243, 194, 119);
   width: 300px;
   height: 100vh;
-  margin-left: 5px;
+  margin-left: 8px;
+  border-radius: 12px;
 }
 .side-bar-header {
   height: 100px;
@@ -19,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 12px;
 }
 
 .header-name a{
@@ -69,7 +71,6 @@ h5 {
 .name{
   text-align: center;
   border-bottom: 3px rgba(236, 146, 72, 0.295) solid;
-  /* margin: 20px; */
 }
 
 .list{
@@ -111,7 +112,7 @@ h5 {
   width: 600px;
   border: 2.1px goldenrod;
   border-style: outset;
-  border-radius: 23%;
+  border-radius: 1.2cm;
   margin-bottom: 18px;
 }
 img{
