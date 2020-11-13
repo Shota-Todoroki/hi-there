@@ -13,12 +13,12 @@
 | age                 | integer |             |
 
 ### Association
-##has_many :sends
-##has_many :comments
-##has_many :room_users
-##has_many :rooms, through: room_users
-##has_many :messages
-##has_one_attached :image
+has_many :sends
+has_many :comments
+has_many :room_users
+has_many :rooms, through: room_users
+has_many :messages
+has_one_attached :image
 
 ## sends テーブル
 
@@ -98,3 +98,5 @@ has_many :messages
  belongs_to :user
  belongs_to :room
  has_many_attached :images
+
+##アプリケーション概要
