@@ -20,6 +20,7 @@
 #### has_many :messages
 #### has_one_attached :image
 
+
 ## sends テーブル
 
 | Column     | Type       | Options                        |
@@ -98,3 +99,4 @@
  #### belongs_to :user
  #### belongs_to :room
  #### has_many_attached :images
+
