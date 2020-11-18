@@ -20,7 +20,7 @@ has_many :rooms, through: room_users
 has_many :messages
 has_one_attached :image
 
-## sends テーブル
+## articles テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | -----------------------------  |
@@ -44,7 +44,6 @@ has_many :tags, through: :send_tag_relations
 ### Association
 belongs_to :user
 belongs_to :send
-has_one_attached :image
 
 ## send_tag_relations テーブル
 

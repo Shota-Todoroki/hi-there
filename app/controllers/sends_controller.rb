@@ -20,6 +20,8 @@ class SendsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @send.comments.includes(:user)
   end
 
   def edit

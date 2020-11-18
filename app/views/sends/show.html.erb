@@ -24,6 +24,29 @@
         <%= @send.content %>
       </p>
     </div>
+    <div class="prototype__comments">
+      <% if user_signed_in? %>
+        <%= form_with(model: [@send,@comment],local: true) do |f|%>
+          <div class="field">
+            <%= f.label :comment, "" %><br />
+            <%= f.text_field :comment %>
+          </div>
+          <div class="actions">
+            <%= f.submit "comment", class: :form__btn  %>
+          </div>
+        <% end %> 
+      <%end%>
+
+      <ul class="comments_lists">
+        <% @comments.each do |comment| %>
+          <li class="comments_list">
+            <%= link_to comment.user.name, user_path(comment.user.id), class: :comment_user %>
+            <%= comment.comment %>
+          </li>
+        <%end%>
+      </ul>
+    </div>
+
   </div>
 </div>
 

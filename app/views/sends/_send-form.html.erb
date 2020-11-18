@@ -10,7 +10,7 @@
               </p>
             </div>
             <div class="image">
-              <%= image_tag send.image.variant(resize: '380x380'), class: "item-img" if send.image.attached? %>
+              <%= image_tag send.image, class: "item-img" if send.image.attached? %>
             </div>
           <%end%>
         </div>
