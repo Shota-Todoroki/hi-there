@@ -1,0 +1,53 @@
+<%= render "head-name"%>
+<div class="base-row">
+  <div class="base">
+    <div class="contents row">
+      <%if user_signed_in? && current_user.id == @article.user.id %> 
+        <div class="more">
+          <div class="more_lists">
+            <div class="edit-page">
+              <%= link_to 'edit', edit_article_path(@article.id), class: "edit" %>
+            </div>
+            <div class="destroy-page">
+              <%= link_to 'delete', article_path(@article.id), class: "destroy", method: :delete %>
+            </div>
+          </div>
+        </div>
+      <%end%>
+    </div> 
+    <div class="image">
+      <%= image_tag @article.image.variant(resize: '380x380'), class: "item-img" if @article.image.attached? %>
+    </div>
+    <div class=contents>
+      <p class="break-all">
+        <%= @article.content %>
+      </p>
+    </div>
+    <div class= "comments-all-lists">
+      <div class="comments-all">
+        <ul class="comments_lists">
+          <% @comments.each do |comment| %>
+            <li class="comments_list">
+              <%= link_to comment.user.nickname, user_path(comment.user.id), class: :comment_user %>
+              <%= comment.comment %>
+            </li>
+          <%end%>
+        </ul>
+        <% if user_signed_in? %>
+          <%= form_with(model: [@article,@comment],local: true) do |f|%>
+            <div class="comment-form">
+              <div class="field">
+                <%= f.text_field :comment %>
+              </div>
+              <div class="actions">
+                <%= f.submit "comment", src:"airport.png", class: :form_btn %>
+              </div>
+            </div>
+          <% end %> 
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>
+
+

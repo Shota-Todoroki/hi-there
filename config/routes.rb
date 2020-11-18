@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   
-  root to: "sends#index"
-  resources :sends, only: [:index, :new, :create, :edit, :update, :show, :destroy]
+  root to: "articles#index"
+  resources :articles do
+    resources :comments, only: :create
+  end
   resources :users, only: [:show, :edit, :update]
 end

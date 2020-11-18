@@ -21,7 +21,7 @@
 #### has_one_attached :image
 
 
-## sends テーブル
+## articles テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | -----------------------------  |
@@ -43,9 +43,9 @@
 | send       | references | null: false, foreign_key: true |
 
 ### Association
-#### belongs_to :user
-#### belongs_to :send
-#### has_many_attached :images
+belongs_to :user
+belongs_to :send
+
 
 ## send_tag_relations テーブル
 

@@ -1,6 +1,13 @@
+.top_skip{
+  text-decoration: none;
+  color:whitesmoke
+}
 .main-page{
   background-color: cornsilk;
 }
+.base-row {
+  background-color: bisque;
+} 
 .wrapper {
   display: flex;
   justify-content: center;
@@ -10,7 +17,9 @@
   background-color: rgb(243, 194, 119);
   width: 300px;
   height: 100vh;
-  margin-left: 5px;
+  margin-left: 8px;
+  margin-top: 14px;
+  border-radius: 12px;
 }
 .side-bar-header {
   height: 100px;
@@ -19,6 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 12px;
 }
 
 .header-name a{
@@ -28,13 +38,13 @@
 }
 
 .chat {
-  background-color: #ffffff;
   margin: 0 auto;
 }
 .chat-form{
   height: 100vh;
-  overflow:scroll;
+  overflow: scroll;
   background-color:cornsilk ;
+  margin-top: 31px;
 }
 
 h1 {
@@ -69,7 +79,6 @@ h5 {
 .name{
   text-align: center;
   border-bottom: 3px rgba(236, 146, 72, 0.295) solid;
-  /* margin: 20px; */
 }
 
 .list{
@@ -109,10 +118,11 @@ h5 {
 
 .send-info{
   width: 600px;
-  border: 2.1px goldenrod;
+  border: 2.1px wheat;
   border-style: outset;
-  border-radius: 23%;
+  border-radius: 1.2cm;
   margin-bottom: 18px;
+  background-color: whitesmoke;
 }
 img{
   max-width:60vw;
@@ -139,20 +149,26 @@ img{
 .edit-page{
   margin-right: 30px;
 }
-.edit{
-  border-bottom:5px blanchedalmond double ;
+.edit { 
+  background-color:darkgrey;
+  color: white;
+  border-radius: 3px;
 }
 .destroy{
-  border-bottom:5px blanchedalmond double ;
+  background-color:darkgrey;
+  color: white;
+  border-radius: 3px;
 }
 .destroy-page{
   margin-left: 30px;
 }
 
 .break-all{
-  border: 3px gray double ;
+  background-color:gainsboro ;
   margin: 30px auto;
-  width:50%
+  width:50%;
+  border-radius: 0.1cm;
+  padding: 5px;
 }
 .edit{
   text-decoration: none;
@@ -161,13 +177,14 @@ img{
   text-decoration: none;
 }
 .base-row{
-  padding-top: 30px;
+  padding: 30px 0;
 }
 .base{
   width: 680px;
   margin: 0 auto ;
-  border: 2.1px goldenrod;
-  border-style: outset;
+  border: white;
+  background-color: whitesmoke;
+  border-radius: 1.2cm;
 }
 .image-list{
   margin: 50px;

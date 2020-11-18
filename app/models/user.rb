@@ -15,7 +15,7 @@ class User < ApplicationRecord
   belongs_to_active_hash :gender
   has_many :room_users
   has_many :room, through: :room_users
-  has_many :sends
+  has_many :articles
   has_many :comments
   has_many :messages
   has_one_attached :image
