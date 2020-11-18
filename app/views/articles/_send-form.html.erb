@@ -1,22 +1,22 @@
 <div class="chat-form">  
   <%# <div class="card-wrapper"> %>
-    <% @sends.each do |send| %>
+    <% @articles.each do |article| %>
       <div class="send-info">
         <div class="send-lists">
-          <%= link_to send_path(send.id) do%>
+          <%= link_to article_path(article.id) do%>
             <div class="name">
               <p class="nick-name">
-                <%= send.user.nickname%>
+                <%= article.user.nickname%>
               </p>
             </div>
             <div class="image">
-              <%= image_tag send.image, class: "item-img" if send.image.attached? %>
+              <%= image_tag article.image, class: "item-img" if article.image.attached? %>
             </div>
           <%end%>
         </div>
         <div class = contents>
           <p class="break-all">
-            <%= send.content %>
+            <%= article.content %>
           </p>
         </div>
       </div>

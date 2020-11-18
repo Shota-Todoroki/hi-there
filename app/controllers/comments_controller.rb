@@ -2,17 +2,17 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(cmt_params)
     if @comment.save
-      redirect_to send_path(@comment.send)
+      redirect_to article_path(@comment.article)
     else
-      @send = @comment.send
-      @comments = @send.comments
-      render "sends/show"
+      @article = @comment.article
+      @comments = @article.comments
+      redirect_to article_path(@article.id)
     end
   end
   
   
   private
   def cmt_params
-    params.require(:comment).permit(:comment).merge(user_id: current_user.id, send_id: params[:send_id])
+    params.require(:comment).permit(:comment).merge(user_id: current_user.id, article_id: params[:article_id])
   end
 end
