@@ -47,15 +47,15 @@ belongs_to :user
 belongs_to :send
 
 
-## send_tag_relations テーブル
+## article_tag_relations テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | -----------------------------  |
-| send       | references | null: false, foreign_key: true |
+| article    | references | null: false, foreign_key: true |
 | tag        | references | null: false, foreign_key: true |
 
 ### Association
-#### belongs_to :send
+#### belongs_to :article
 #### belongs_to :tag
 
 ## tags テーブル
@@ -65,8 +65,8 @@ belongs_to :send
 | tag        | references | null: false, foreign_key: true |
 
 ### Association
-#### has_many :send_tag_relations
-#### has_many :tags, through :send_tag_relations
+#### has_many :article_tag_relations
+#### has_many :tags, through :article_tag_relations
 
 ## room_users テーブル
 | Column   | Type       | Options                        |
@@ -78,7 +78,7 @@ belongs_to :send
 #### belongs_to :user
 #### belongs_to :room
 
-## rooms テーブル　
+## rooms テーブル
 | Column     | Type       | Options                        |
 | ---------- | ---------- | -----------------------------  |
 | user       | references | null: false, foreign_key: true |
