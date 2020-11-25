@@ -1,7 +1,0 @@
-<h1>Chat room</h1>
-<div id='messages'>
-  <%= render partial: "messages/message", collection: @messages %>
-</div>
-<%= label_tag :message, 'Say something:' %>
-<%= text_field_tag :message, nil, data: { behavior: 'room_speaker' } %>
-
