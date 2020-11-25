@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-  validates :content, presence: true
+  validates :sentence, presence: true
 
   belongs_to       :user
   has_many         :comments

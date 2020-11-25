@@ -2,7 +2,7 @@
   <%= form_with model: @article, local: true do |f| %>
     <div id="image-list"></div>
     <%= f.file_field :image, placeholder: "Image Url", id: "image-form" %>
-    <%= f.text_area :content, placeholder: "text", rows: "10", class: "text-form" %>
+    <%= f.text_area :sentence, placeholder: "text", rows: "10", class: "text-form" %>
     <%= f.submit "SEND", class: "send-form" %>
   <% end %>
 </div> 
