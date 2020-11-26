@@ -7,6 +7,7 @@
 }
 .base-row {
   background-color: bisque;
+  display: flex;
 } 
 .wrapper {
   display: flex;
@@ -182,6 +183,7 @@ img{
 .base{
   width: 680px;
   margin: 0 auto ;
+  padding-bottom: 17px;
   border: white;
   background-color: whitesmoke;
   border-radius: 1.2cm;

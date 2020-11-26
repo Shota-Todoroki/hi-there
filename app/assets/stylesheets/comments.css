@@ -1,13 +1,19 @@
-.comments-all-lists{
-  display: flex;
-  justify-content: center;
-}
+
 .comment-form{
   display: flex;
-  margin-bottom: 30px;
+  justify-content: center;
+  margin: 22px auto;
 }
-.comments-lists{
-  margin:30px 0
+.comments-all-lists{
+  margin:30px 0;
+  height: 600px;
+}
+.comments-all{
+  height: 93%;
+}
+.comments_lists{
+  height: 100%;
+  overflow: scroll;
 }
 .comment_user{
   color: black;
@@ -17,13 +23,20 @@
 }
 .comments_list{
   border-bottom:1px white solid;
-  margin-bottom: 5px;
+  margin: 0 15px 5px ;
 }
-/* .form_btn{
-  background: white url('airport.png') no-repeat top ;
-  border: none;
-  font: none;
-  height: 40px;
-} */
+
+.total-length{
+  font-size: 13.3px;
+  width: 29%;
+  margin-left:20px;
+  padding-left: 12px;
+  border-bottom:1.5px white solid ;
+  border-right-style:dotted 10% ;
+}
+
+
+
+
 
 
