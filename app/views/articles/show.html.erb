@@ -23,6 +23,25 @@
         <%= @article.sentence %>
       </p>
     </div>
+    <div class = "comments">
+      <% if user_signed_in? %>
+        <%= form_with(model: [@article,@comment],local: true) do |f|%>
+          <div class="comment-form">
+            <div class="field">
+              <%= f.text_field :comment %>
+            </div>
+            <div class="actions">
+              <%= f.submit "comment", src:"airport.png", class: :form_btn %>
+            </div>
+          </div>
+        <% end %> 
+      <%end%>
+    </div>
+    <div class="total-the-number">
+      <div class="total-length">
+        <%= "View all #{@comments.length} comments" %>
+      </div>
+    </div>
     <div class= "comments-all-lists">
       <div class="comments-all">
         <ul class="comments_lists">
@@ -33,18 +52,6 @@
             </li>
           <%end%>
         </ul>
-        <% if user_signed_in? %>
-          <%= form_with(model: [@article,@comment],local: true) do |f|%>
-            <div class="comment-form">
-              <div class="field">
-                <%= f.text_field :comment %>
-              </div>
-              <div class="actions">
-                <%= f.submit "comment", src:"airport.png", class: :form_btn %>
-              </div>
-            </div>
-          <% end %> 
-        <%end%>
       </div>
     </div>
   </div>
