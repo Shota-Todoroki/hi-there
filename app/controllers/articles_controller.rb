@@ -24,6 +24,10 @@ class ArticlesController < ApplicationController
     @comments = @article.comments.includes(:user).order("created_at DESC")
   end
 
+  def search
+    @articles = SearchArticlesService.search(params[:keyword])
+  end
+
   def edit
   end
 
