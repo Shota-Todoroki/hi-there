@@ -1,13 +1,11 @@
 <div class="side-bar-header">
+  <div class="header-name-icon">
+    <%= image_tag current_user.image, class:"icon" %>
+  </div>
   <div class="header-name">
-    <%= link_to current_user.nickname%>
+    <%= link_to current_user.nickname %>
   </div>
-  <div class="options">
-    <ul class="lists">
-      <li class="list"><%= link_to "send", new_article_path, class: "option"%></li>
-      <li class="list"><%= link_to "My account",user_path(current_user.id),class: "option" %></li>
-    </ul>
-  </div>
+
 </div>
 
 

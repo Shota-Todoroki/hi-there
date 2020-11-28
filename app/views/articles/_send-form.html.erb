@@ -1,16 +1,14 @@
-<div class="chat-form">  
+<div class="chat-form"> 
   <div class="send-info">
     <div class="send-lists">
-      <%= link_to article_path(article.id) do%>
-        <div class="name">
-          <p class="nick-name">
-            <%= article.user.nickname%>
-          </p>
-        </div>
-        <div class="image">
-          <%= image_tag article.image, class: "item-img" if article.image.attached? %>
-        </div>
-      <%end%>
+      <li class="name">
+        <%= image_tag article.user.image, class:"icon" %>
+        <%= link_to article.user.nickname ,user_path(article.user_id),class: "nick-name" %>
+      </li>
+
+      <div class="image">
+        <%= link_to image_tag(article.image, class: "item-img"),article_path(article.id)%>
+      </div>
     </div>
     <div class = contents>
       <p class="break-all">

@@ -25,17 +25,17 @@
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
-  background-color: #4e8deb;
+  background-color: sandybrown;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border-radius: 12px;
 }
 
 .header-name a{
-  font-size: 16px;
+  font-size: 21px;
   color: #FAFAFA;
   text-decoration: none;
+  margin-left: 7px;
 }
 
 .chat {
@@ -48,14 +48,10 @@
   margin-top: 31px;
 }
 
-h1 {
-  font-size: 47px;
-  text-align: center;
-  background-color: rgb(238, 185, 117);
-  color:white;
-  width: 100vw;
-  margin: 15px auto;
-}
+
+
+
+
 h3 {
   font-size: 32px;
   text-align: center;
@@ -78,13 +74,20 @@ h5 {
 }
 
 .name{
+  list-style: none;
   text-align: center;
-  border-bottom: 3px rgba(236, 146, 72, 0.295) solid;
+  border-bottom: 1.1px rgba(236, 146, 72, 0.295) solid;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .list{
   list-style: none;
-  text-align: center;
+  margin-left: 43px;
+  margin-top: 9.7px;
+}
+.options{
+  margin-top: 33px;
 }
 
 .option{
@@ -191,7 +194,14 @@ img{
 .image-list{
   margin: 50px;
 }
-
+.title-name{
+  padding: 12px;
+}
+.nick-name {
+  text-decoration: none;
+  color: sienna;
+  margin-bottom: 14px;
+}
 /*編集ページ */
 .second-title{
   display: flex;
@@ -207,8 +217,17 @@ h5 {
 
 /* 検索 */
 .search-form{
-  margin-top: 30px;
-  padding-left: 20px;
-  
+  padding-left: 138px;
+}
+.search-input{
+  width: 240px;
+  height: 33px;
+}
+
+/* アイコン */
+.icon{
+  height: 33px;
+  width: 33px;
+  border-radius: 0.7cm;
 }
 
