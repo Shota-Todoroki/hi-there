@@ -1,6 +1,7 @@
 <div class="main-page">  
   <div class="title-name">
-    <h1>Hi-there</h1>
+    <h1>Hi-there<h1>
+
   </div>
   <div class="wrapper">
     <div class="side-bar">
@@ -19,7 +20,7 @@
         <%= f.submit "search", class: "search-btn" %>
       <% end %>
 
-      <div class="contents row">
+      <div class="contents-row">
         <% @articles.each do |article| %>
           <%= render partial: "send-form", locals: { article: article } %>
         <% end %>
