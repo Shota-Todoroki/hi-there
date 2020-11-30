@@ -36,10 +36,17 @@
   color: #FAFAFA;
   text-decoration: none;
   margin-left: 7px;
+  transition: .3s;
+  border-radius: 0.1cm;
 }
 
 .chat {
   margin: 0 auto;
+}
+
+.contents-row{
+  height: 160vh;
+  overflow: scroll;
 }
 .chat-form{
   height: 100vh;
@@ -47,8 +54,6 @@
   background-color:cornsilk ;
   margin-top: 31px;
 }
-
-
 
 
 
@@ -81,7 +86,7 @@ h5 {
   margin: 0 auto;
 }
 
-.list{
+.list {
   list-style: none;
   margin-left: 43px;
   margin-top: 9.7px;
@@ -94,6 +99,8 @@ h5 {
   text-decoration: none;
   color: white;
   border-bottom:1px blanchedalmond solid ;
+  transition: .3s;
+  border-radius: 0.1cm;
 }
 
 .image-form{
@@ -135,6 +142,7 @@ img{
 .card-wrapper{
   width: 100vw; 
 }
+
 /* 詳細ページ */
 .image{
   display: flex;
@@ -201,7 +209,14 @@ img{
   text-decoration: none;
   color: sienna;
   margin-bottom: 14px;
+  transition: .3s;
+  border-radius: 0.1cm;
 }
+.nick-name:hover{
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+
 /*編集ページ */
 .second-title{
   display: flex;
@@ -223,11 +238,36 @@ h5 {
   width: 240px;
   height: 33px;
 }
+.search-btn{
+  height: 30px;
+}
 
 /* アイコン */
 .icon{
   height: 33px;
   width: 33px;
   border-radius: 0.7cm;
+}
+ul {
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+}
+ul li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none!important;
+}
+ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0a4";
+  position: absolute;
+  left : 1em; 
+  color: white; 
+}
+.option:hover{
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.header-name a:hover{
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 }
 
