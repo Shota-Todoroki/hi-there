@@ -5,14 +5,13 @@
         <%= image_tag article.user.image, class:"icon" %>
         <%= link_to article.user.nickname ,user_path(article.user_id),class: "nick-name" %>
       </li>
-
       <div class="image">
-        <%= link_to image_tag(article.image, class: "item-img"),article_path(article.id)%>
+        <%= link_to image_tag(article.image, class: "item-img"),article_path(article.id) if article.image.attached?%>
       </div>
     </div>
     <div class = contents>
       <p class="break-all">
-        <%= article.sentence %>
+        <%= link_to article.sentence,article_path(article.id),class:"sentence-all"%>
       </p>
     </div>
   </div>

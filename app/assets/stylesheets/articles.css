@@ -120,6 +120,11 @@ h5 {
 .container{
   display: flex;
   justify-content: center;
+  margin-top: 40px;
+
+}
+.image_form{
+  margin: 0 auto;
 }
 
 .send-lists{
@@ -252,7 +257,7 @@ ul {
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
 }
-ul li {
+ul li{
   line-height: 1.5;
   padding: 0.5em 0;
   list-style-type: none!important;
@@ -270,4 +275,17 @@ ul li:before {
 .header-name a:hover{
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 }
-
+.sentence-all{
+  text-decoration: none;
+  color: black;
+}
+.post-page{
+  margin: 0 auto;
+}
+.new-post{
+  background-color: cornsilk;
+  height: 1000px;
+}
+.post-form{
+  height: 60%;
+}
