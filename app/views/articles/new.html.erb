@@ -1,11 +1,13 @@
-<%= render "head-name"%>
+<div class="new-post"> 
+  <%= render "head-name"%>
 
-<div class="contents"> 
-  <%= render "shared/error_messages",model: @article %> 
-  <div class="contents row">
-    <h4>post page</h4>
-    <div class="container">
-      <%= render partial: "form",locals: {article: @article},class: "form"%>
+  <div class="contents"> 
+    <%= render "shared/error_messages",model: @article %> 
+    <div class="contents row">
+      <h4 class="post-page">post page</h4>
+      <div class="container">
+        <%= render partial: "form",locals: {article: @article},class: "form"%>
+      </div>
     </div>
   </div>
 </div>

@@ -44,14 +44,14 @@
     </div>
     <div class= "comments-all-lists">
       <div class="comments-all">
-        <ul class="comments_lists">
+        <div class="comments_lists">
           <% @comments.each do |comment| %>
-            <li class="comments_list">
-              <%= link_to comment.user.nickname, user_path(comment.user.id), class: :comment_user %>
+            <div class="comments_list">
+              <%= link_to comment.user.nickname, user_path(comment.user.id), class:"comment_user" %>
               <%= comment.comment %>
-            </li>
+            </div>
           <%end%>
-        </ul>
+       </div>
       </div>
     </div>
   </div>
