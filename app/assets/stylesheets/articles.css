@@ -115,6 +115,18 @@ h5 {
 .send-form{
   display: block;
   margin: 27px auto;
+  border-radius: 5px;
+  box-shadow: 1.3px 1.3px 0 0 black;
+  transition: all 0.3s;
+  background-color: white;
+}
+.send-form:hover {
+  transform: translate(2px 2px);
+  box-shadow: none;
+}
+.error-message{
+  text-align: center;
+  margin-top: 28px;
 }
 
 .container{
@@ -245,6 +257,12 @@ h5 {
 }
 .search-btn{
   height: 30px;
+  box-shadow: 1px 1px 0 0 black;
+  transition: all 0.3s
+}
+.search-btn:hover{
+  box-shadow: none;
+  transform:translate(1px 1px);
 }
 
 /* アイコン */
@@ -288,4 +306,10 @@ ul li:before {
 }
 .post-form{
   height: 60%;
+}
+.destroy:hover{
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.edit:hover{
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 }

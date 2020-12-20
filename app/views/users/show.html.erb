@@ -4,7 +4,9 @@
       <h2><%=link_to "My-account", root_path,class:"my-account"%></h2>
       <div class="select-option">
         <div class="edit-btn">
-          <%= link_to ">>Edit", edit_user_path(current_user.id),class: "my-account" %>
+          <% if user_signed_in? && current_user.id == @user.id%>
+            <%= link_to ">>Edit", edit_user_path(current_user.id), class: "my-account" %>
+          <% end %>
         </div>
       </div>
     </div>
@@ -40,6 +42,11 @@
         </tbody>
       </table>
     </div>
+  </div>
+  <div class="contents_row">
+    <% @articles.each do |article| %>
+      <%= render partial: "show-form", locals: { article: article } %>
+    <% end %>
   </div>
 </div>
 
