@@ -40,7 +40,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    if user_signed_in? && current_user.id == @article.user.id
+    if user_signed_in? && current_user.id == @article.user_id
       @article.destroy
       redirect_to root_path
     else
@@ -59,7 +59,7 @@ class ArticlesController < ApplicationController
   end
 
   def move_to_index
-    unless user_signed_in? && current_user.id == @artilce.user.id
+    unless user_signed_in? && current_user.id == @article.user_id
       redirect_to root_path
     end
   end
